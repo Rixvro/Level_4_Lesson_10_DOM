@@ -32,10 +32,15 @@
     <script>
         //Exercise 1
         //Select the p tag by its id and assign it a variable
+        let madLib = document.getElementById('mad-lib');
         //Select all the div tags and assign them a variable
+        let divTags = document.getElementsByTagName('div');
         //Select all the tags with class choice and assign them a variable
+        let choiceTags = document.getElementsByClassName('choice');
         //Use the variables to show the tags in the console
-     
+        console.log(madLib);
+        console.log(divTags);
+        console.log(choiceTags);
 
 
 
@@ -43,11 +48,11 @@
 
         //Exercise 2
         //Change the p tag's text content to something new
+        madLib.textContent = 'new text';
         //Change the p tag's innerHTML to the hahaha.png
-
-        
-
+        madLib.innerHTML = '<img src = "./images/hahaha.png" alt = "hahaha">';
         //Exercise 3 is in form.html
+
 
     </script>
 </body>
